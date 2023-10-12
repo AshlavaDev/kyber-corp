@@ -2,6 +2,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Orbitron, Gemunu_Libre } from 'next/font/google'
 
+import TopNavigation from '@/app/components/navigation/TopNavigation'
+
 const orbitron = Orbitron({
   subsets: ['latin'],
   variable: '--font-orbitron',
@@ -24,7 +26,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${orbitron.variable} ${gemunuLibre.variable}`}>{children}</body>
+      <body className={`${orbitron.variable} ${gemunuLibre.variable}`}>
+        <TopNavigation />
+        {children}
+      </body>
     </html>
   )
 }
