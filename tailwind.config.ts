@@ -11,6 +11,15 @@ const config: Config = {
       fontFamily: {
         heading: ['var(--font-orbitron)'],
         main: ['var(--font-gemunu-libre)'],
+      },
+      width: {
+        'button': '18.75rem'
+      },
+      height: {
+        'button': '3.375rem'
+      },
+      dropShadow: {
+        'button': '6px 6px rgba(0, 0, 0, 0.5)'
       }
     },
     colors: {

@@ -2,3 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn {
+    @apply text-deepblue text-4xl w-button h-button flex items-center justify-center font-main button-shadow;
+  }
+
+  .btn-primary {
+    @apply bg-cyberyellow;
+  }
+
+  .btn-secondary {
+    @apply bg-seagray;
+  }
+}
+
+@layer utilities {
+  .button-shadow {
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+  }
+}
