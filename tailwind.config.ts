@@ -8,12 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      fontFamily: {
+        heading: ['var(--font-orbitron)'],
+        main: ['var(--font-gemunu-libre)'],
+      }
     },
+    colors: {
+      'cyberyellow': '#C0DD4A',
+      'deepblue': '#092047',
+      'purple': '#63345E',
+      'seagray': '#B7C1DE',
+      'yellowshadow': '#77863C'
+    }
   },
   plugins: [],
 }
