@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+//TODO: Add hover for links
+
 export default function HeroSection() {
   return (
     <section className="min-h-screen flex flex-col bg-purple justify-center gap-16">
