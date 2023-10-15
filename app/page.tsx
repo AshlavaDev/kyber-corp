@@ -1,11 +1,11 @@
 import HeroSection from "@/app/components/sections/home/HeroSection";
-import ServicesCards from "@/app/components/sections/home/ServicesCards";
+import ServicesHome from "@/app/components/sections/home/ServicesHome";
 
 export default function Home() {
   return (
     <main>
       <HeroSection />
-      <ServicesCards />
+      <ServicesHome />
     </main>
   )
 }

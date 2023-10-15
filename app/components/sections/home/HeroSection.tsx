@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-//TODO: Add hover for links
+//TODO: Add hover for links and background image
 
 export default function HeroSection() {
   return (
     <section className="min-h-screen flex flex-col bg-purple justify-center gap-16">
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex flex-col items-center gap-4">
         <h1 className="text-cyberyellow text-5xl font-heading font-semibold text-center">Kyber Corporation</h1>
         <p className="font-main text-seagray text-2xl text-center">A corporation that cares about people. A corporation that cares about you.</p>
       </div>

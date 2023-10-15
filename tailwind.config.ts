@@ -20,6 +20,9 @@ const config: Config = {
       },
       dropShadow: {
         'button': '6px 6px rgba(0, 0, 0, 0.5)'
+      },
+      boxShadow: {
+        'yellowcard': '8px 8px 10px 2px rgba(119, 134, 60, 0.5)',
       }
     },
     colors: {

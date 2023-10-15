@@ -14,6 +14,10 @@
   .btn-secondary {
     @apply bg-seagray;
   }
+
+  .purple-gradient {
+    background: linear-gradient(61deg, rgba(99, 52, 94, 0.90) 9.27%, rgba(9, 32, 71, 0.85) 69.35%);
+  }
 }
 
 @layer utilities {
