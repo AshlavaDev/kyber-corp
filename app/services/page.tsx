@@ -3,5 +3,5 @@ export default function ServicePage() {
     <main>
       <h1>Services</h1>
     </main>
-  )
+  );
 }

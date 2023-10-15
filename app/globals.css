@@ -4,7 +4,7 @@
 
 @layer components {
   .btn {
-    @apply text-deepblue text-4xl w-button h-button flex items-center justify-center font-main button-shadow;
+    @apply button-shadow flex h-button w-button items-center justify-center font-main text-4xl text-deepblue;
   }
 
   .btn-primary {
@@ -16,7 +16,11 @@
   }
 
   .purple-gradient {
-    background: linear-gradient(61deg, rgba(99, 52, 94, 0.90) 9.27%, rgba(9, 32, 71, 0.85) 69.35%);
+    background: linear-gradient(
+      61deg,
+      rgba(99, 52, 94, 0.9) 9.27%,
+      rgba(9, 32, 71, 0.85) 69.35%
+    );
   }
 }
 
