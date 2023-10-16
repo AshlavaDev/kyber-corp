@@ -1,7 +1,3 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 import HomeCard from "@/app/UI/HomeCard";
 
 const services = [
@@ -28,7 +24,7 @@ const services = [
   },
 ];
 
-//TODO: Carousel for cards?, mobile responsive
+//TODO: Carousel for cards?
 
 export default function ServicesHome() {
   return (

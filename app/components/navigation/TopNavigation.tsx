@@ -5,7 +5,6 @@ import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState, useEffect } from 'react'
 
-//TODO: Add hover for links and mobile version
 
 export default function TopNavigation() {
   const [isMobile, setIsMobile] = useState(false)
