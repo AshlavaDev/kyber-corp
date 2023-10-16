@@ -8,11 +8,15 @@
   }
 
   .btn-primary {
-    @apply bg-cyberyellow;
+    @apply bg-cyberyellow border border-cyberyellow hover:bg-deepblue hover:text-cyberyellow;
   }
 
   .btn-secondary {
-    @apply bg-seagray;
+    @apply bg-seagray border border-seagray hover:bg-deepblue hover:text-seagray;
+  }
+
+  .nav-link {
+    @apply hover:bg-deepblue hover:text-cyberyellow px-3
   }
 
   .purple-gradient {
