@@ -1,23 +1,23 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface HomeCardsProps {
   image: string;
   alt: string;
   title: string;
   content: string;
-  linkHref?: string;
+  linkHref: string;
 }
-
-//TODO: Add links
 
 export default function HomeCard({
   image,
   alt,
   title,
   content,
+  linkHref,
 }: HomeCardsProps) {
   return (
-    <div className="purple-gradient hover:opacity-60 h-[400px] w-[300px] border border-cyberyellow shadow-yellowcard overflow-hidden">
+    <Link className="purple-gradient h-[400px] w-[300px] overflow-hidden border border-cyberyellow shadow-yellowcard hover:opacity-60" href={linkHref}>
       <Image src={image} alt={alt} width={300} height={200} />
       <div className="flex h-full w-full flex-col gap-2 p-2">
         <h3 className="text-center font-heading text-4xl font-semibold text-cyberyellow">
@@ -25,6 +25,6 @@ export default function HomeCard({
         </h3>
         <p className="font-main text-lg text-cyberyellow">{content}</p>
       </div>
-    </div>
+    </Link>
   );
 }

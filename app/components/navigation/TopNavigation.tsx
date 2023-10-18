@@ -1,17 +1,16 @@
-'use client'
+"use client";
 
-import CorpLogo from "@/app/UI/CorpLogo";
+import CorpLogo from "@/app/components/UI/CorpLogo";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useState, useEffect } from 'react'
-
+import { useState, useEffect } from "react";
 
 export default function TopNavigation() {
-  const [isMobile, setIsMobile] = useState(false)
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMobile, setIsMobile] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const width = isMobile ? 60 : 80
-  const height = isMobile ? 60 : 80
+  const width = isMobile ? 60 : 80;
+  const height = isMobile ? 60 : 80;
 
   useEffect(() => {
     const handleResize = () => {
@@ -20,35 +19,54 @@ export default function TopNavigation() {
 
     handleResize();
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   return (
-    <header className="fixed z-50 flex h-[100px] w-full items-center justify-between bg-cyberyellow p-2.5 text-deepblue md:h-[130px] px-2">
+    <header className="fixed z-50 flex h-[100px] w-full items-center justify-between bg-cyberyellow p-2.5 px-2 text-deepblue md:h-[130px]">
       <div className="flex items-center gap-2 md:gap-4">
         <CorpLogo width={width} height={height} />
-        <h4 className="font-heading text-2xl md:text-4xl font-semibold">KC</h4>
+        <h4 className="font-heading text-2xl font-semibold md:text-4xl">KC</h4>
       </div>
-      <nav className="hidden md:flex items-center gap-[180px] pr-[160px] font-main text-4xl">
-        <Link href="/" className="nav-link">Home</Link>
-        <Link href="/services" className="nav-link">Services</Link>
-        <Link href="/careers" className="nav-link">Careers</Link>
-        <Link href="/contact" className="nav-link">Contact Us</Link>
+      <nav className="hidden items-center gap-[180px] pr-[160px] font-main text-4xl md:flex">
+        <Link href="/" className="nav-link">
+          Home
+        </Link>
+        <Link href="/services" className="nav-link">
+          Services
+        </Link>
+        <Link href="/careers" className="nav-link">
+          Careers
+        </Link>
+        <Link href="/contact" className="nav-link">
+          Contact Us
+        </Link>
       </nav>
-      <button className="md:hidden w-12 h-12 flex items-center justify-center" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        <GiHamburgerMenu className="w-full h-auto" />
+      <button
+        className="flex h-12 w-12 items-center justify-center md:hidden"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
+        <GiHamburgerMenu className="h-auto w-full" />
       </button>
       {isMenuOpen && (
-      <nav className="flex md:hidden flex-col absolute top-[100px] left-0 w-full bg-cyberyellow p-2.5 text-deepblue font-main text-4xl">
-        <Link href="/" className="nav-link">Home</Link>
-        <Link href="/services" className="nav-link">Services</Link>
-        <Link href="/careers" className="nav-link">Careers</Link>
-        <Link href="/contact" className="nav-link">Contact Us</Link>
-      </nav>
+        <nav className="absolute left-0 top-[100px] flex w-full flex-col bg-cyberyellow p-2.5 font-main text-4xl text-deepblue md:hidden">
+          <Link href="/" className="nav-link">
+            Home
+          </Link>
+          <Link href="/services" className="nav-link">
+            Services
+          </Link>
+          <Link href="/careers" className="nav-link">
+            Careers
+          </Link>
+          <Link href="/contact" className="nav-link">
+            Contact Us
+          </Link>
+        </nav>
       )}
     </header>
   );

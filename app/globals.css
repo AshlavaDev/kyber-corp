@@ -8,15 +8,15 @@
   }
 
   .btn-primary {
-    @apply bg-cyberyellow border border-cyberyellow hover:bg-deepblue hover:text-cyberyellow;
+    @apply border border-cyberyellow bg-cyberyellow hover:bg-deepblue hover:text-cyberyellow;
   }
 
   .btn-secondary {
-    @apply bg-seagray border border-seagray hover:bg-deepblue hover:text-seagray;
+    @apply border border-seagray bg-seagray hover:bg-deepblue hover:text-seagray;
   }
 
   .nav-link {
-    @apply hover:bg-deepblue hover:text-cyberyellow px-3
+    @apply px-3 hover:bg-deepblue hover:text-cyberyellow;
   }
 
   .purple-gradient {
