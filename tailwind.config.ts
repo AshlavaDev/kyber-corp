@@ -29,6 +29,7 @@ const config: Config = {
       cyberyellow: "#C0DD4A",
       deepblue: "#092047",
       purple: "#63345E",
+      darkpurple: "#330042",
       seagray: "#B7C1DE",
       yellowshadow: "#77863C",
     },
