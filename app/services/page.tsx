@@ -2,6 +2,8 @@ import Cleaning from "@/app/components/sections/services/Cleaning";
 import Security from "@/app/components/sections/services/Security";
 import PR from "@/app/components/sections/services/PR";
 
+
+//TODO: Add actual content and play around with motion framer
 export default function ServicePage() {
   return (
     <main className="flex flex-col gap-16 bg-gradient-to-b from-deepblue to-darkpurple px-4 pb-8 pt-32 text-cyberyellow md:gap-28 md:px-10 md:pb-20">
