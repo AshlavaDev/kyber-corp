@@ -6,7 +6,10 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useState, useEffect } from "react";
 
 export default function TopNavigation() {
+
+  //This allows for the logo svg to be adjusted repsonsively
   const [isMobile, setIsMobile] = useState(false);
+  //This allows for the menu to be toggled on mobile
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const width = isMobile ? 60 : 80;
@@ -27,7 +30,7 @@ export default function TopNavigation() {
   }, []);
 
   return (
-    <header className="fixed z-50 flex h-[100px] w-full items-center justify-between bg-cyberyellow p-2.5 px-2 text-deepblue md:h-[130px]">
+    <header className="fixed z-50 flex h-24 w-full items-center justify-between bg-cyberyellow p-2 text-deepblue">
       <div className="flex items-center gap-2 md:gap-4">
         <CorpLogo width={width} height={height} />
         <h4 className="font-heading text-2xl font-semibold md:text-4xl">KC</h4>
