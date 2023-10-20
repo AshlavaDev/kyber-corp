@@ -45,7 +45,7 @@ export default function page() {
             <p>Upward mobility within the company for hard workers</p>
           </li>
           <li>
-            <p>Perfomrance Bonuses</p>
+            <p>Performance Bonuses</p>
           </li>
           <li>
             <p>Discount on healthcare insurance policies</p>
