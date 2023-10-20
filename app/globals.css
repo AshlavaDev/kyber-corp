@@ -26,6 +26,10 @@
       rgba(9, 32, 71, 0.85) 69.35%
     );
   }
+
+  .main-bg {
+    @apply bg-gradient-to-b from-deepblue to-darkpurple
+  }
 }
 
 @layer utilities {

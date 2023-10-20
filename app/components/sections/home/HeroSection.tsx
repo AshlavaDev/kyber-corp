@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="relative flex min-h-screen flex-col justify-center gap-16 bg-purple bg-cover bg-fixed bg-center">
+    <section className="relative flex min-h-screen flex-col justify-center gap-16 bg-cover bg-fixed bg-center">
       <div className="bg-black absolute inset-0 z-10 h-full w-full opacity-50 mix-blend-darken"></div>
       <div className="relative z-20 flex flex-col items-center gap-4">
         <h1 className="text-center font-heading text-5xl font-semibold text-cyberyellow md:text-8xl">

@@ -1,9 +1,10 @@
 "use client";
 
-import CorpLogo from "@/app/components/UI/CorpLogo";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState, useEffect } from "react";
+
+import CorpLogo from "@/app/components/UI/CorpLogo";
 
 export default function TopNavigation() {
 

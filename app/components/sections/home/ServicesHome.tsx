@@ -31,7 +31,7 @@ const services = [
 
 export default function ServicesHome() {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-center gap-8 bg-deepblue py-4 md:gap-20">
+    <section className="flex min-h-screen flex-col items-center justify-center gap-8 py-4 md:gap-20">
       <h2 className="text-center font-heading text-4xl font-semibold text-cyberyellow md:text-5xl">
         What we can offer you!
       </h2>
