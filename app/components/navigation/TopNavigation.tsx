@@ -7,7 +7,6 @@ import { useState, useEffect } from "react";
 import CorpLogo from "@/app/components/UI/CorpLogo";
 
 export default function TopNavigation() {
-
   //This allows for the logo svg to be adjusted repsonsively
   const [isMobile, setIsMobile] = useState(false);
   //This allows for the menu to be toggled on mobile

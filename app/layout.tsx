@@ -20,8 +20,6 @@ export const metadata: Metadata = {
   description: "Future Solutions to Modern Problems",
 };
 
-//TODO: Add footer
-
 export default function RootLayout({
   children,
 }: {

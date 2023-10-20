@@ -28,7 +28,7 @@
   }
 
   .main-bg {
-    @apply bg-gradient-to-b from-deepblue to-darkpurple
+    @apply bg-gradient-to-b from-deepblue to-darkpurple;
   }
 }
 

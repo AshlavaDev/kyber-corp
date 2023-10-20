@@ -5,7 +5,6 @@ import { LuCopyright } from "react-icons/lu";
 import { useState, useEffect } from "react";
 
 export default function Footer() {
-
   return (
     <footer className="flex w-full flex-col items-center justify-center gap-2 bg-cyberyellow py-4 text-deepblue">
       <p className="flex items-center font-main text-2xl md:text-4xl">
