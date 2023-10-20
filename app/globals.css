@@ -30,6 +30,26 @@
   .main-bg {
     @apply bg-gradient-to-b from-deepblue to-darkpurple;
   }
+
+  .form-div {
+    @apply flex flex-col gap-1;
+  }
+
+  .form-label {
+    @apply font-main text-lg md:text-2xl;
+  }
+
+  .form-input {
+    @apply text-deepblue text-lg p-1 rounded bg-cyberyellow;
+  }
+
+  .form-input::placeholder {
+    @apply text-deepblue text-lg text-opacity-70;
+  }
+
+  .fieldset-div {
+    @apply flex items-center justify-between pr-2 pl-4 w-1/2;
+  }
 }
 
 @layer utilities {
