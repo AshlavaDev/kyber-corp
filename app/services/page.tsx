@@ -1,6 +1,6 @@
-import Cleaning from "@/app/components/sections/services/Cleaning";
-import Security from "@/app/components/sections/services/Security";
-import PR from "@/app/components/sections/services/PR";
+import Cleaning from "@/components/sections/services/Cleaning";
+import Security from "@/components/sections/services/Security";
+import PR from "@/components/sections/services/PR";
 
 //TODO: Add actual content
 export default function ServicePage() {

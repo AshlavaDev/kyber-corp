@@ -1,4 +1,4 @@
-import HomeCard from "@/app/components/UI/HomeCard";
+import HomeCard from "@/components/UI/HomeCard";
 
 const services = [
   {

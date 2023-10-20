@@ -1,6 +1,6 @@
 "use client";
 
-import CorpLogo from "@/app/components/UI/CorpLogo";
+import CorpLogo from "@/components/UI/CorpLogo";
 import { LuCopyright } from "react-icons/lu";
 import { useState, useEffect } from "react";
 

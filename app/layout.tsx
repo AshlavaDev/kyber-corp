@@ -2,8 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Orbitron, Gemunu_Libre } from "next/font/google";
 
-import TopNavigation from "@/app/components/navigation/TopNavigation";
-import Footer from "@/app/components/navigation/Footer";
+import TopNavigation from "@/components/navigation/TopNavigation";
+import Footer from "@/components/navigation/Footer";
 
 const orbitron = Orbitron({
   subsets: ["latin"],

@@ -1,5 +1,5 @@
-import HeroSection from "@/app/components/sections/home/HeroSection";
-import ServicesHome from "@/app/components/sections/home/ServicesHome";
+import HeroSection from "@/components/sections/home/HeroSection";
+import ServicesHome from "@/components/sections/home/ServicesHome";
 
 //TODO: Modals for portfolio explanations
 export default function Home() {
