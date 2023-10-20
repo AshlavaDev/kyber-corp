@@ -1,6 +1,6 @@
 export default function page() {
   return (
-    <main className="pt-32 pb-8 px-2 min-h-screen main-bg text-cyberyellow flex flex-col gap-12 md:gap-20">
+    <main className="pt-32 pb-8 px-2 min-h-screen text-cyberyellow flex flex-col gap-12 md:gap-20">
       <div className="flex flex-col gap-6">
         <h1 className="font-heading text-4xl md:text-6xl text-center ">Joining the Kyber Family</h1>
         <p className="text-center text-lg md:text-2xl font-main text-seagray">&quot;Discretion is the better part of valour&quot;</p>

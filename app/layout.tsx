@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${orbitron.variable} ${gemunuLibre.variable}`}>
+      <body className={`${orbitron.variable} ${gemunuLibre.variable} main-bg`}>
         <TopNavigation />
         {children}
         <Footer />
