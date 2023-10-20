@@ -1,6 +1,8 @@
 'use client'
 
-import { useState, FormEvent } from "react";
+import { useState, FormEvent, useEffect } from "react";
+
+import Modal from "@/components/UI/Modal";
 
 interface ContactProps {
   name: string;
@@ -18,6 +20,18 @@ const InitialContactState: ContactProps = {
 
 export default function ContactPage() {
   const [state, setState] = useState(InitialContactState);
+  const [loadModal, setLoadModal] = useState(false);
+  const [formModal, setFormModal] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoadModal(true);
+    }, 2000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     setState({
@@ -29,7 +43,7 @@ export default function ContactPage() {
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
-    console.log(state);
+    setFormModal(true);
   }
 
   return (
@@ -73,6 +87,24 @@ export default function ContactPage() {
           <button className="btn btn-primary self-center" type="submit">Submit</button>
         </form>
       </div>
+      {loadModal && (
+        <Modal onClose={() => setLoadModal(false)}>
+          <p>This is a contact page with the standard form you might see on other websites. The form itself accepts information with React useState, but the submit button will not send any emails as this is a portfolio piece. I don&apos;t want to be inundated with emails, and I am sure whoever us looking at this site wants the same.</p>
+          <p>Unless you are a recruiter who loves emails. Then contact me and I can make it spam them for you.</p>
+        </Modal>
+      )}
+      {formModal && (
+        <Modal onClose={() => setFormModal(false)}>
+          <p>If this were a real website, the form would submit now. Since I wanted to avoid sending emails for a portfolio project, this modal shows instead. For a front-end project, a service such as Formspree woud be used for this form, and in projects with backends the email functionality would be dealt with there.</p>
+          <p>Instead, here is the information you would have submitted:</p>
+          <ul>
+            <li>Name: {state.name}</li>
+            <li>Email: {state.email}</li>
+            <li>Phone: {state.phone}</li>
+            <li>Service: {state.service}</li>
+          </ul>
+        </Modal>
+      )}
     </main>
   );
 }
