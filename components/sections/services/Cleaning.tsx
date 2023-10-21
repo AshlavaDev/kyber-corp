@@ -3,9 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-
 export default function Cleaning() {
-
   return (
     <motion.section
       className="flex flex-col items-center justify-center opacity-0"

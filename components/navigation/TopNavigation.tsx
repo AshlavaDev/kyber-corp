@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
 import CorpLogo from "@/components/UI/CorpLogo";
 
@@ -57,17 +58,25 @@ export default function TopNavigation() {
       </button>
       {isMenuOpen && (
         <nav className="absolute left-0 top-[100px] flex w-full flex-col bg-cyberyellow p-2.5 font-main text-4xl text-deepblue md:hidden">
-          <Link href="/" className="nav-link">
-            Home
+          <Link href="/">
+            <div className="nav-link" onClick={() => setIsMenuOpen(false)}>
+              Home
+            </div>
           </Link>
-          <Link href="/services" className="nav-link">
-            Services
+          <Link href="/services">
+            <div className="nav-link" onClick={() => setIsMenuOpen(false)}>
+              Services
+            </div>
           </Link>
-          <Link href="/careers" className="nav-link">
-            Careers
+          <Link href="/careers">
+            <div className="nav-link" onClick={() => setIsMenuOpen(false)}>
+              Careers
+            </div>
           </Link>
-          <Link href="/contact" className="nav-link">
-            Contact Us
+          <Link href="/contact">
+            <div className="nav-link" onClick={() => setIsMenuOpen(false)}>
+              Contact Us
+            </div>
           </Link>
         </nav>
       )}
