@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
 
 import CorpLogo from "@/components/UI/CorpLogo";
 
