@@ -2,7 +2,7 @@ import HomeCard from "@/components/UI/HomeCard";
 
 const services = [
   {
-    image: "/images/services/gil-ribeiro-3hO8igCybds-unsplash.jpg",
+    image: "/images/home/services/gil-ribeiro-3hO8igCybds-unsplash.jpg",
     alt: "A person cleaning a room",
     title: "Cleaning",
     content:
@@ -10,7 +10,7 @@ const services = [
     linkHref: "/services/#cleaning",
   },
   {
-    image: "/images/services/nasa-Q1p7bh3SHj8-unsplash.jpg",
+    image: "/images/home/services/nasa-Q1p7bh3SHj8-unsplash.jpg",
     alt: "An orbital view of Earth with many lights",
     title: "Security",
     content:
@@ -18,7 +18,7 @@ const services = [
     linkHref: "/services/#security",
   },
   {
-    image: "/images/services/tim-mossholder-Z7U-Iy5EtSM-unsplash.jpg",
+    image: "/images/home/services/tim-mossholder-Z7U-Iy5EtSM-unsplash.jpg",
     alt: "A sign on the side of a building that says The Public",
     title: "PR",
     content:
@@ -26,8 +26,6 @@ const services = [
     linkHref: "/services/#pr",
   },
 ];
-
-//TODO: Carousel for cards?
 
 export default function ServicesHome() {
   return (

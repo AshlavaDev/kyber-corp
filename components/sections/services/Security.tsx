@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Security() {
   return (
@@ -12,24 +13,30 @@ export default function Security() {
       viewport={{ amount: "all" }}
     >
       <div className="flex flex-col items-center gap-8 md:flex-row md:gap-24">
-        <div className="order-first h-full w-full flex-1 items-center justify-center border border-cyberyellow md:order-1">
-          Image
+        <div className="order-first h-full w-full max-w-prose flex-1 items-center justify-center border border-cyberyellow md:order-1">
+          <Image
+            src="/images/services/tobias-tullius-4dKy7d3lkKM-unsplash.jpg"
+            alt="A security camera image painted on a wall"
+            width={900}
+            height={600}
+            className="object-contain"
+          />
         </div>
-        <div className="flex flex-1 flex-col gap-4">
+        <div className="flex max-w-prose flex-1 flex-col gap-4">
           <h2 className="font-heading text-4xl font-semibold md:text-6xl">
             Security
           </h2>
           <p className="max-w-prose font-main text-lg md:text-2xl">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Laudantium, temporibus quae sapiente repellat voluptate accusantium
-            aperiam reprehenderit. Mollitia eum quo provident accusantium
-            possimus ad similique repellat ipsum, iure sequi vitae.
+            The world is a dangerous place, and a person as important as you or
+            even your company deserve the finest in protection. Defend against
+            the threats that come your way or preemptively take them out before
+            that can do you harm.
           </p>
           <p className="max-w-prose font-main text-lg md:text-2xl">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            explicabo eveniet placeat voluptate, ex enim consequuntur maxime
-            nemo culpa, vel eos officiis pariatur reprehenderit, dolore ea
-            molestiae velit vero cum.
+            The Kyber Corporation takes matters of Security very seriously. Our
+            team of highly trained professionals can make the dangers out there
+            disappear, giving you peace of mind. Our Discretion Packages ensures
+            that any threat is taken care of quietly.
           </p>
         </div>
       </div>
