@@ -42,7 +42,6 @@ export default function ContactPage() {
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-
     setFormModal(true);
   }
 

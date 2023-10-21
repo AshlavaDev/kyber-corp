@@ -4,7 +4,7 @@
 
 ### Purpose: A fairly simple website for a fake company with a cyberpunk theme
 
-### Keywords: Front-end, Next 13, Framer Motion, React Hot Toast, TailwindCSS, Typescript
+### Keywords: Front-end, Next 13, Framer Motion, TailwindCSS, Typescript
 
 ### Description
 
