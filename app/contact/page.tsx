@@ -47,7 +47,7 @@ export default function ContactPage() {
   }
 
   return (
-    <main className="flex flex-col items-center gap-16 px-2 pb-8 pt-20 text-cyberyellow md:px-6 md:pb-16 md:pt-32">
+    <main className="flex flex-col items-center gap-16 px-2 pb-8 pt-28 text-cyberyellow md:px-6 md:pb-16 md:pt-32">
       <div className="flex flex-col items-center gap-4">
         <h1 className="text-center font-heading text-4xl font-bold md:text-6xl">
           Contact Us

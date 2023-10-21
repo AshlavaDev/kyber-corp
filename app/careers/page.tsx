@@ -40,7 +40,7 @@ export default function page() {
         <p className="font-main text-xl md:text-3xl">
           Joining Kyber comes with many perks including:{" "}
         </p>
-        <ul className="flex flex-col gap-2 font-main text-lg md:text-2xl">
+        <ul className="flex flex-col gap-2 pl-4 font-main text-lg md:text-2xl">
           <li>
             <p>Upward mobility within the company for hard workers</p>
           </li>

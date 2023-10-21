@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
 import Cleaning from "@/components/sections/services/Cleaning";
 import Security from "@/components/sections/services/Security";
@@ -31,7 +32,16 @@ export default function ServicePage() {
       <PR />
       {loadModal && (
         <Modal onClose={() => setLoadModal(false)}>
-          <p>This simple page is used to showcase the &quot;services&quot; of Kyber. While liek the company none of the services are real, they allowed me to be a little creative while also allowing me to practice with some Framer Motion animations.</p>
+          <p>
+            This simple page is used to showcase the &quot;services&quot; of
+            Kyber. While like the company none of the services are real, they
+            allowed me to be a little creative while also allowing me to
+            practice with some Framer Motion animations.
+          </p>
+          <p>
+            Images are stored locally due to potential resource contrains,
+            although a CMS for images as well as content would be preferable
+          </p>
         </Modal>
       )}
     </main>

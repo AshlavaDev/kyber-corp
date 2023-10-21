@@ -9,7 +9,7 @@ interface ModalProps {
 export default function Modal({ onClose, children }: ModalProps) {
   return (
     <div
-      className="fixed left-0 top-0 flex h-full w-full items-center justify-center bg-deepblue/50 text-lg text-deepblue md:text-xl"
+      className="fixed left-0 top-0 p-2 flex h-full w-full items-center justify-center bg-deepblue/50 text-lg text-deepblue md:text-xl"
       style={{ zIndex: 9999 }}
     >
       <div className="flex max-w-prose flex-col items-center gap-4 rounded-lg bg-seagray p-6 shadow-lg">

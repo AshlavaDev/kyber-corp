@@ -10,7 +10,7 @@ export default function Security() {
       id="security"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ amount: "all" }}
+      viewport={{ amount: window.innerWidth > 768 ? "all" : "some" }}
     >
       <div className="flex flex-col items-center gap-8 md:flex-row md:gap-24">
         <div className="order-first h-full w-full max-w-prose flex-1 items-center justify-center border border-cyberyellow md:order-1">
